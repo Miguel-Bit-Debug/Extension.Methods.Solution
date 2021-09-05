@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Web.API.Models
 {
@@ -9,6 +10,7 @@ namespace Web.API.Models
             Id = Guid.NewGuid();
         }
 
+        [Key]
         public Guid Id { get; set; }
     }
 }
